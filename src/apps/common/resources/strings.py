@@ -35,6 +35,7 @@ TEXT: dict = {
     'default_amount': 'NAN',
     'ecosystem': 'ecosystem',
     'ecosystem_selector_title': 'Select the platform:',
+    'ecosystem_selector_count': '{:d} DAOs',
     'erc_image_name': 'logo-erc.png',
     'erc_url': 'https://erc.europa.eu/',
     'follow_us': 'Follow us on ',

@@ -49,7 +49,6 @@
 }
 
 .ecosystem {
-    height: 80px;
     width: 150px;
     border: 4px solid transparent;
 }
@@ -68,9 +67,12 @@
     cursor: pointer;
 }
 
-.ecosystem-img {
+.ecosystem-inner {
     position: relative;
-    top: -80px;
+    top: -100%;
+}
+
+.ecosystem-img {
     height: auto;
     max-width: 150px;
 }

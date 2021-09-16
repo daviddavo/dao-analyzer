@@ -52,20 +52,29 @@ def __generate_header(labels: List[Dict[str, str]], ecosystem: str, update: str)
                 html.Div(children=[
                     html.Div(className='ecosystem-overlay daostack-color',
                         id='daostack-bt'),
-                    html.Img(src=os.path.join(REL_PATH, TEXT['daostack_image_name']),
-                        className='ecosystem-img flex-size-1'),
+                    html.Div(className='ecosystem-inner flex-size-1', children=[
+                        html.Img(src=os.path.join(REL_PATH, TEXT['daostack_image_name']),
+                            className='ecosystem-img flex-size-1'),
+                        html.Span(TEXT['ecosystem_selector_count'].format(-1)),
+                    ]),
                 ], className=f'ecosystem daostack-ecosystem {selected[0]}'),
                 html.Div(children=[
                     html.Div(className='ecosystem-overlay aragon-color', 
                         id='aragon-bt'),
-                    html.Img(src=os.path.join(REL_PATH, TEXT['aragon_image_name']),
-                        className='ecosystem-img flex-size-1'),
+                    html.Div(className='ecosystem-inner flex-size-1', children=[
+                        html.Img(src=os.path.join(REL_PATH, TEXT['aragon_image_name']),
+                            className='ecosystem-img flex-size-1'),
+                        html.Span(TEXT['ecosystem_selector_count'].format(-1)),
+                    ]),
                 ], className=f'ecosystem aragon-ecosystem {selected[1]}'),
                 html.Div(children=[
                     html.Div(className='ecosystem-overlay daohaus-color',
                         id='daohaus-bt'),
-                    html.Img(src=os.path.join(REL_PATH, TEXT['daohaus_image_name']),
-                        className='ecosystem-img flex-size-1'),
+                    html.Div(className='ecosystem-inner flex-size-1', children=[
+                        html.Img(src=os.path.join(REL_PATH, TEXT['daohaus_image_name']),
+                            className='ecosystem-img flex-size-1'),
+                        html.Span(TEXT['ecosystem_selector_count'].format(-1)),
+                    ]),
                 ], className=f'ecosystem daohaus-ecosystem {selected[2]}'),
             ], className='flex-row flex-space-evenly flex-size-3')
 
